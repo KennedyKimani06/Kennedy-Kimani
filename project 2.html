@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio: Augmented Reality Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 3em 0;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .project-details {
+            margin-bottom: 3em;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project: Augmented Reality Application</h1>
+        <p>Tools Used: Unity Editor, AR Foundation, AR Core, Smartphone Camera</p>
+    </header>
+
+    <section id="project-details">
+        <div class="container">
+            <div class="project-details">
+                <h2>Design Workflow for AR Dragon App </h2>
+                <p>1.AR Foundation Setup:
+                   - Begin by installing AR Foundation and AR Core through the Unity Package Manager on the Windows platform, laying the foundation for augmented reality capabilities.
+                 </p>
+                <img src="AR f c.png" alt="Image Description 1"
+                width="500" height="400">
+                <p>2.Platform Configuration:
+                    - Switch the platform to Android for optimal compatibility. Navigate to Player Settings, select Vulkan API, and switch the scripting backend to IL2CPP, laying the groundwork for a robust AR experience.
+                 </p>
+                 <img src="andi2.png" alt="Image Description 1"
+                width="500" height="400">
+                <p>3.Graphics Optimization for Immersive Realism:
+                    - Pay attention to visual finesse by carefully adjusting graphics settings. Unchecking auto graphics empowers precise control over the visual elements, while selecting Vulkan API enhances graphics rendering, contributing to an immersive and realistic dragon encounter.
+                 </p>
+                <img src="grap3.png" alt="Image Description 1"
+                width="500" height="400">
+                <p>4.Scene Setup:
+                    - Right-click to access scene options. Choose XR and select AR Session Origin. This step seamlessly integrates the AR camera, providing the groundwork for immersive interactions.
+                 </p>
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>AR Session Integration</h2>
+                <p>1.Refrence Image:
+                    - The AR Tracked Image Manager takes center stage, dynamically spawning prefabs once images are recognized.
+                 </p>
+                <img src="download (2).jpg" alt="Image Description 2"
+                >
+                <p>2.AR Tracked Image Manager Integration:
+                    - Integrate the AR Tracked Image Manager seamlessly into the AR Session, creating a symbiotic relationship that enhances the app's interactivity.
+                 </p>
+                <p>3.Dynamic Prefab Spawning:
+                    - Witness the magic unfold as the AR Tracked Image Manager diligently identifies and tracks specified images. Upon image recognition, dynamic prefabs materialize, bringing the dragon to life in response to the user's environment.
+                 </p>
+                <img src="YouTube.jpg" alt="Image Description 1"
+                width="300" height="200">
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Joystick Integration </h2>
+                <p>• This meticulous integration of a joystick control system not only adds a layer of interactivity to the AR Dragon App but also exemplifies a commitment to user-centric design</p>
+                <p>• Canvas Setup for User Interface:
+                    - Initiate the design process by right-clicking to access the UI options and selecting a Canvas. Optimal user interface foundation sets the stage for intuitive controls.
+                  </p>
+                <p>• Responsive Screen Scaling:
+                    - Enhance the user experience by configuring the Canvas Scaler from a constant pixel size to scale with screen size. This ensures a responsive layout across various devices, optimizing the joystick's visual appeal.
+                  </p>
+                <p>• Joystick Prefab Integration:
+                    - Navigate to the joystick section and effortlessly integrate the joystick prefab by dragging and dropping the fixed joystick into the Canvas. This step seamlessly introduces the joystick interface for user-friendly dragon control.
+                  </p>
+                <img src="Joystick.jpg" alt="Image Description 1"
+                width="400" height="300">
+                <p>• Physics Adjustment for Realism:
+                    - Augment realism by adding a Rigidbody component to the joystick. Uncheck the "Use Gravity" option to ensure a weightless and responsive joystick experience, enhancing overall control precision
+                 </p>
+                <p>• Dragon Controller Configuration:
+                    - Tailor the dragon's responsiveness by configuring the dragon controller. Set the speed to 0.5, striking the perfect balance between fluid movement and user control, culminating in an immersive augmented reality encounter.                 
+                 </p>
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Building Unity App for Android</h2>
+                <p>The following link contains a path to google drive where you can download the application and review:<a href="https://drive.google.com/file/d/1bI2U2uCLSQoJ0YDbENXadLW3qCNyRJuM/view?usp=drivesdk">Import APP</a></p>
+                <p>The following link contains instruction on how to build the program to android on completion; <a href="https://docs.unity3d.com/Manual/android-BuildProcess.html">link to docs</a></p>
+                <p>Before you create a build, configure your project’s settings so that Unity builds the application with the runtime settings and build system properties you want.</p>
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Challenges Faced and Solutions Achieved</h2>
+                <p>1. The need for the latest version of Google Play Services presented a compatibility challenge, as some devices were not equipped with the required version, potentially limiting the app's reach.</p>
+                <img src="NUP.jpg" alt="Image Description 1"
+                width="300" height="400">
+                <p>2. Tailoring the app for the Android platform required nuanced adjustments in graphics settings, API selection, and scripting backends to ensure optimal performance.</p>
+                <p>3. Implementing AR Tracked Image Manager to dynamically spawn dragon prefabs based on image recognition posed challenges in ensuring precise tracking and responsiveness.</p>
+                <p>4. Incorporating a joystick for dragon control demanded a delicate balance between responsiveness and realism, especially in relation to physics and speed settings.</p>
+                <!-- Add more challenges and solutions as needed -->
+            </div>
+        </div> 
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Kennedy Kimani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

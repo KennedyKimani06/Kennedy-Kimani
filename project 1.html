@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio: Augmented Reality Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 3em 0;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .project-details {
+            margin-bottom: 3em;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project: Augmented Reality Application</h1>
+        <p>Tools Used: Unity Editor, Vuforia Engine SDK, Web Camera, Smartphone Camera</p>
+    </header>
+
+    <section id="project-details">
+        <div class="container">
+            <div class="project-details">
+                <h2>Design Process - Main Scene</h2>
+                <p>1. Marker chosen: Gearbox Cohort 7 Logo.</p>
+                <img src="GAE-7 20231004_152651.jpg" alt="Image Description 1"
+                width="400" height="400">
+                <p>2. Image target uploaded to Vuforia Engine Developer Portal.</p>
+                <p>3. Unity editor first scene named main scene; a plane object designed with the image target as the background.</p>
+                <img src="2.jpg" alt="Image Description 1"
+                width="500" height="400">
+                <p>4.For the user interface, a canvas was added to the hierarchy tab; within the tab add a button (text mesh pro) called “Next Scene”.An image depicting next was downloaded:</p>
+                <img src="4.jpg" alt="Image Description 1"
+                width="100" height="100">
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Scene 2</h2>
+                <p>1. Plane object made a child of the image target; an art piece added to the albedo component.</p>
+                <img src="5.jpg" alt="Image Description 2"
+                width="400" height="400">
+                <p>2.Once this scene is switched to, the art piece till appear on-top of the image target.</p>
+                <p>3. Second canvas added with an additional button scripted to exit the app.</p>
+                <img src="6.jpg" alt="Image Description 1"
+                width="100" height="100">
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Scripting the Buttons</h2>
+                <p>• A scene changer object was designed. </p>
+                <p>• A scene changer script was created and added to the scene changer object. From here, once a button is pressed, a scene changer function will be called upon according to its functionality. </p>
+                <img src="7.jpg" alt="Image Description 1"
+                width="300" height="300">
+                <p>• Functions defined for scene changing and app exit.</p>
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Building Unity App for Android</h2>
+                <p>The following link contains a path to google drive where you can download the application and review:<a href="https://drive.google.com/file/d/1b7oLF6A9XJj8Oxoe81kmGXRbbX5JBz6I/view?usp=drivesdk">Import APP</a></p>
+                <p>The following link contains instruction on how to build the program to android on completion; <a href="https://docs.unity3d.com/Manual/android-BuildProcess.html">link to docs</a></p>
+                <p>Before you create a build, configure your project’s settings so that Unity builds the application with the runtime settings and build system properties you want.</p>
+                <!-- Add more details as needed -->
+            </div>
+            <div class="project-details">
+                <h2>Challenges Faced and Solutions Achieved</h2>
+                <p>1.Unity specifies the version it requires but it cannot be downloaded from the unity hub.Unity version 2021.3.13f1 lacked usable Android NDK tools. Solved by downloading from; <a href="https://dl.google.com/android/repository/android-ndk-r21d-windowsx86_64.zip">link </a></p>
+                <img src="9.jpg" alt="Image Description 1"
+                width="400" height="400">
+                <p>2. Merger error resolved by adjusting the minimum API level.</p>
+                <p>3. UI buttons shifting position on different Android devices fixed by setting the canvas scaler to Scale with Screen Size.</p>
+                <!-- Add more challenges and solutions as needed -->
+            </div>
+        </div> 
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Kennedy Kimani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
